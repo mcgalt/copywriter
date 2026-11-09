@@ -1,0 +1,113 @@
+/* Tank Tools: the parts theme.json can't express (cards, badges, dark mode, per-kind colours). */
+
+/* ---------- colours per kind of tank: marine blue (default), freshwater green, coldwater orange ---------- */
+body.tt-kind-fresh{ --wp--preset--color--accent:#2b8a3e; --wp--preset--color--ocean:#0b2a20; --wp--preset--color--ocean-2:#14513a; }
+body.tt-kind-cold { --wp--preset--color--accent:#d9480f; --wp--preset--color--ocean:#0d2833; --wp--preset--color--ocean-2:#1b4f5e; }
+
+/* ---------- dark mode follows the visitor's device ---------- */
+@media (prefers-color-scheme: dark){
+  body{ --wp--preset--color--base:#0b141d; --wp--preset--color--panel:#121b25; --wp--preset--color--contrast:#e7eef5;
+        --wp--preset--color--muted:#91a2b3; --wp--preset--color--line:#2a3644; --wp--preset--color--accent:#3d9bff; }
+  body.tt-kind-fresh{ --wp--preset--color--accent:#40c057; }
+  body.tt-kind-cold { --wp--preset--color--accent:#ff8a3d; }
+}
+/* the landing page header stays the same deep blue */
+body.tt-landing .tt-topbar, body.tt-landing .tt-hero{ background-color:#082238 !important; }
+
+body{ -webkit-text-size-adjust:100%; -webkit-tap-highlight-color:transparent; }
+.wp-site-blocks{ min-height:100vh; display:flex; flex-direction:column; }
+.wp-site-blocks > main, .wp-site-blocks > .tt-main{ flex:1; }
+.wp-site-blocks > *{ margin-block-start:0; }
+
+/* ---------- header ---------- */
+.tt-brand .wp-block-site-logo img{ border-radius:10px; display:block; }
+.tt-topbar .wp-block-navigation a, .tt-topbar .wp-block-navigation{ color:var(--wp--preset--color--on-ocean); text-decoration:none; }
+.tt-pills .wp-block-navigation-item__content,
+.tt-pill a{
+  display:inline-flex; align-items:center; border:1px solid rgba(255,255,255,.3); background:rgba(255,255,255,.08);
+  color:#fff !important; border-radius:999px; padding:7px 14px; font-size:14px; font-weight:650; text-decoration:none !important; line-height:1.1;
+}
+.tt-pills .wp-block-navigation-item__content:hover, .tt-pill a:hover{ background:rgba(255,255,255,.16); }
+.tt-pills .current-menu-item > .wp-block-navigation-item__content{ background:rgba(255,255,255,.2); border-color:rgba(255,255,255,.55); }
+.tt-topbar .wp-block-navigation__responsive-container-open{ color:#fff; }
+.tt-topbar .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content{ border:0; background:none; font-size:20px; padding:8px 0; }
+
+/* ---------- dark header with the page title and intro ---------- */
+.tt-hero-title{ margin-top:28px !important; margin-bottom:10px !important; color:var(--wp--preset--color--on-ocean); }
+.tt-hero .tt-lede{ margin-top:0 !important; }
+.tt-hero .tt-lede p, p.tt-lede{ margin:0; max-width:32em; color:var(--wp--preset--color--lede); font-size:17px; }
+.tt-hero .wp-block-post-excerpt__more-link{ display:none; }
+.tt-hero .wp-block-post-excerpt:empty{ display:none; }
+
+/* ---------- sections ---------- */
+h2.tt-section{ margin:34px 0 12px !important; }
+.tt-intro{ margin:-4px 0 14px !important; color:var(--wp--preset--color--muted); }
+.tt-muted{ color:var(--wp--preset--color--muted); }
+
+/* ---------- cards ---------- */
+.tt-grid{ gap:16px !important; }
+@media (max-width:639px){ .tt-grid{ grid-template-columns:1fr !important; } }
+@media (min-width:640px){ .tt-grid.tt-cols-2{ grid-template-columns:1fr 1fr !important; } }
+.tt-card{
+  position:relative; display:flex; flex-direction:column; background:var(--wp--preset--color--panel);
+  border:1px solid var(--wp--preset--color--line); border-radius:10px; overflow:hidden; margin:0 !important;
+}
+.tt-card > *{ margin-block:0 !important; }
+.tt-card figure{ margin:0 !important; }
+.tt-photo img{ display:block; width:100%; height:auto; aspect-ratio:16/10; object-fit:cover; background:#000; }
+.tt-body{ display:flex; flex-direction:column; flex:1; padding:14px 16px 16px; }
+.tt-body > *{ margin-block:0 !important; }
+.tt-body h3{ margin:0 0 4px !important; }
+.tt-tool .tt-body h3{ font-family:var(--wp--preset--font-family--sans); font-size:18px; font-weight:650; }
+.tt-body p.tt-muted{ font-size:15px; margin-bottom:0 !important; }
+.tt-go{ margin-top:auto !important; padding-top:12px; font-weight:650; color:var(--wp--preset--color--accent); }
+.tt-go a{ color:inherit; text-underline-offset:3px; text-decoration-thickness:1px; }
+.tt-card:hover .tt-go a{ text-decoration-thickness:2px; }
+/* the whole card is clickable through its link */
+.tt-go a::after{ content:""; position:absolute; inset:0; z-index:1; }
+/* a different link colour on each kind card, as on the per-kind pages */
+.tt-k-fresh .tt-go{ color:#2b8a3e; } .tt-k-cold .tt-go{ color:#d9480f; }
+@media (prefers-color-scheme: dark){ .tt-k-fresh .tt-go{ color:#40c057; } .tt-k-cold .tt-go{ color:#ff8a3d; } }
+
+/* tool screenshots sit in a dark frame, like a window onto the app */
+.tt-frame{ position:relative; background:var(--wp--preset--color--ocean); padding:14px 14px 0; overflow:hidden; }
+.tt-frame > *{ margin:0 !important; }
+.tt-shot img{ display:block; width:100%; height:auto; aspect-ratio:16/10; object-fit:cover; object-position:center top;
+  border-radius:7px 7px 0 0; box-shadow:0 0 0 1px rgba(255,255,255,.14), 0 10px 28px rgba(0,0,0,.4); }
+
+/* badges */
+.tt-title-row{ align-items:center; margin-bottom:4px !important; }
+.tt-title-row h3{ margin:0 !important; }
+.tt-badge{
+  display:inline-block; margin:0 !important; font-size:11px; font-weight:750; letter-spacing:.05em; text-transform:uppercase; line-height:1.4;
+  background:linear-gradient(135deg,#f2c14e,#f2711c); color:#2b1700; border-radius:999px; padding:2px 8px;
+}
+/* a tool that isn't ready yet: greyed out, dashed, not clickable */
+.tt-card.is-soon{ border-style:dashed; }
+.tt-card.is-soon .tt-shot img{ filter:grayscale(1) brightness(.75); opacity:.6; }
+.tt-card.is-soon h3, .tt-card.is-soon p{ color:var(--wp--preset--color--muted); }
+.tt-card.is-soon .tt-go{ color:var(--wp--preset--color--muted); }
+.tt-soon-tag{
+  position:absolute !important; left:50%; top:50%; transform:translate(-50%,-30%); background:rgba(8,20,32,.82); color:#fff;
+  border:1px solid rgba(255,255,255,.3); border-radius:999px; padding:7px 14px; font-weight:700; font-size:14px; letter-spacing:.02em; white-space:nowrap;
+}
+
+/* sign-up box */
+.tt-cta{ max-width:320px; padding:14px 16px 16px; border-radius:16px; }
+.tt-cta p{ font-size:15px; margin:0 0 8px !important; }
+.tt-cta .wp-block-buttons{ margin-top:4px !important; }
+
+/* ---------- note from the maker ---------- */
+.tt-note{
+  margin:34px 0 8px !important; padding:18px 20px; background:var(--wp--preset--color--panel);
+  border:1px solid var(--wp--preset--color--line); border-left:4px solid var(--wp--preset--color--accent); border-radius:6px;
+}
+.tt-note h2{ margin:0 0 8px !important; font-size:21px; }
+.tt-note p{ margin:0 0 10px !important; max-width:40em; }
+.tt-note p:last-child{ margin-bottom:0 !important; }
+.tt-note .tt-sig{ font-family:var(--wp--preset--font-family--serif); font-style:italic; font-size:18px; }
+
+/* ---------- footer ---------- */
+.tt-foot{ border-top:1px solid var(--wp--preset--color--line); }
+.tt-foot, .tt-foot a{ color:var(--wp--preset--color--muted); }
+.tt-foot p{ margin:0 0 6px; }

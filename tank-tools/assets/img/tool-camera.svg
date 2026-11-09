@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Helvetica,Arial,sans-serif"><rect width="640" height="400" fill="#120a3a"/><rect x="320" width="320" height="400" fill="#1a0f22"/>
+<path d="M60 400c-10-90 20-140 0-220" stroke="#6b4dff" stroke-width="14" stroke-linecap="round" fill="none"/><circle cx="60" cy="180" r="12" fill="#a05cff"/>
+<path d="M120 400c-10-90 20-140 0-220" stroke="#6b4dff" stroke-width="14" stroke-linecap="round" fill="none"/><circle cx="120" cy="180" r="12" fill="#a05cff"/>
+<path d="M180 400c-10-90 20-140 0-220" stroke="#6b4dff" stroke-width="14" stroke-linecap="round" fill="none"/><circle cx="180" cy="180" r="12" fill="#a05cff"/>
+<path d="M240 400c-10-90 20-140 0-220" stroke="#6b4dff" stroke-width="14" stroke-linecap="round" fill="none"/><circle cx="240" cy="180" r="12" fill="#a05cff"/>
+<path d="M380 400c-10-90 20-140 0-220" stroke="#59ff7a" stroke-width="14" stroke-linecap="round" fill="none"/><circle cx="380" cy="180" r="12" fill="#ff6fb5"/>
+<path d="M440 400c-10-90 20-140 0-220" stroke="#59ff7a" stroke-width="14" stroke-linecap="round" fill="none"/><circle cx="440" cy="180" r="12" fill="#ff6fb5"/>
+<path d="M500 400c-10-90 20-140 0-220" stroke="#59ff7a" stroke-width="14" stroke-linecap="round" fill="none"/><circle cx="500" cy="180" r="12" fill="#ff6fb5"/>
+<path d="M560 400c-10-90 20-140 0-220" stroke="#59ff7a" stroke-width="14" stroke-linecap="round" fill="none"/><circle cx="560" cy="180" r="12" fill="#ff6fb5"/>
+<rect x="318" width="4" height="400" fill="#fff"/><text x="14" y="26" font-size="14" font-weight="700" fill="#fff">Original</text><text x="334" y="26" font-size="14" font-weight="700" fill="#fff">Corrected</text></svg>

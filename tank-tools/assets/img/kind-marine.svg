@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"><defs><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b4f7d"/><stop offset="1" stop-color="#062033"/></linearGradient></defs><rect width="800" height="500" fill="url(#w)"/>
+<g opacity=".18" fill="#bfe9ff"><path d="M120 0l60 0-140 500h-40z"/><path d="M420 0l40 0-90 500h-50z"/><path d="M640 0l50 0-60 500h-60z"/></g>
+<g><ellipse cx="160" cy="470" rx="220" ry="90" fill="#7a4b3a"/><ellipse cx="560" cy="480" rx="300" ry="80" fill="#8f5a3f"/>
+<path d="M470 470c-6-70 6-120 0-190" stroke="#e2c35a" stroke-width="16" stroke-linecap="round" fill="none"/>
+<path d="M510 470c-6-70 6-120 0-190" stroke="#e2c35a" stroke-width="16" stroke-linecap="round" fill="none"/>
+<path d="M550 470c-6-70 6-120 0-190" stroke="#e2c35a" stroke-width="16" stroke-linecap="round" fill="none"/>
+<path d="M590 470c-6-70 6-120 0-190" stroke="#e2c35a" stroke-width="16" stroke-linecap="round" fill="none"/>
+<path d="M630 470c-6-70 6-120 0-190" stroke="#e2c35a" stroke-width="16" stroke-linecap="round" fill="none"/>
+<circle cx="120" cy="400" r="46" fill="#d56b8c"/><circle cx="210" cy="420" r="36" fill="#f08c5a"/><circle cx="330" cy="430" r="40" fill="#9b6bd5"/></g>
+<g transform="translate(200 150) scale(1.1)"><path d="M0 0c18-16 46-16 62 0-16 16-44 16-62 0z" fill="#47d6e8"/><path d="M60 0l20-14v28z" fill="#47d6e8" opacity=".85"/><circle cx="14" cy="-3" r="3" fill="#04121d"/></g>
+<g transform="translate(330 220) scale(.8)"><path d="M0 0c18-16 46-16 62 0-16 16-44 16-62 0z" fill="#47d6e8"/><path d="M60 0l20-14v28z" fill="#47d6e8" opacity=".85"/><circle cx="14" cy="-3" r="3" fill="#04121d"/></g>
+<g transform="translate(560 120) scale(.9)"><path d="M0 0c18-16 46-16 62 0-16 16-44 16-62 0z" fill="#5ee0f0"/><path d="M60 0l20-14v28z" fill="#5ee0f0" opacity=".85"/><circle cx="14" cy="-3" r="3" fill="#04121d"/></g>
+<g transform="translate(120 260) scale(.7)"><path d="M0 0c18-16 46-16 62 0-16 16-44 16-62 0z" fill="#3cc2d8"/><path d="M60 0l20-14v28z" fill="#3cc2d8" opacity=".85"/><circle cx="14" cy="-3" r="3" fill="#04121d"/></g>
+<g transform="translate(640 230) scale(.75)"><path d="M0 0c18-16 46-16 62 0-16 16-44 16-62 0z" fill="#47d6e8"/><path d="M60 0l20-14v28z" fill="#47d6e8" opacity=".85"/><circle cx="14" cy="-3" r="3" fill="#04121d"/></g>
+</svg>
