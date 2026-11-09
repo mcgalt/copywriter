@@ -12,7 +12,7 @@
 <!-- wp:group {"className":"tt-card tt-cta","layout":{"type":"default"}} -->
 <div class="wp-block-group tt-card tt-cta">
 <!-- wp:paragraph {"className":"tt-muted"} -->
-<p class="tt-muted"><strong>Make a free account</strong> to save your tank. Your details stay backed up and follow you to every device, and Pro is there when you want extra tools.</p>
+<p class="tt-muted"><strong>Make a free account</strong> to save your tank. Your details stay backed up and follow you to every device.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"tt-muted"} -->
 <p class="tt-muted">Just browsing? Every tool below opens with an example tank.</p>

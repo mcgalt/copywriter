@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) || exit;
 
 function tank_tools_starter_pages() {
 	return array(
-		'home'       => array( 'Tools for your tank', 'Track your water tests, plan your flow and lighting, and keep an eye on everything living in your tank. Free to start, with Pro when you want more.', '', 'landing' ),
+		'home'       => array( 'Tools for your tank', 'Track your water tests, plan your flow and lighting, and keep an eye on everything living in your tank. All free to use.', '', 'landing' ),
 		'marine'     => array( 'Reef tanks', 'Plan your flow, stay on top of your tests, find the right spot for every coral and keep watch over the whole reef.', '', 'marine' ),
 		'freshwater' => array( 'Freshwater tanks', 'Filter flow, water tests, light for your plants, and a check on whether your fish will get along.', 'page-kind-fresh', 'fresh' ),
 		'coldwater'  => array( 'Coldwater tanks', 'Keep goldfish and other coldwater fish healthy with tools for flow, testing, plants and stocking.', 'page-kind-cold', 'cold' ),

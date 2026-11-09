@@ -138,16 +138,16 @@ function tank_tools_kind_tools( $kind ) {
 		'marine' => array(
 			array( 'Flow Planner', 'Place your pumps and rockwork in a 3D model of the tank and spot the dead zones where water barely moves.', 'flow', 'tool-flow.svg', '' ),
 			array( 'Water Tests', 'Record alkalinity, calcium, salinity and more, see the trend at a glance and get a nudge when something swings too fast.', 'tests', 'tool-log.svg', '' ),
-			array( 'Light & PAR', 'Choose your fixture and see an estimate of PAR across the tank, so each coral goes where it will thrive.', 'light', 'tool-light.svg', 'pro' ),
+			array( 'Light & PAR', 'Choose your fixture and see an estimate of PAR across the tank, so each coral goes where it will thrive.', 'light', 'tool-light.svg', '' ),
 			array( 'Tank Health', 'Keep a list of your livestock, run quick check-ups and get one score that weighs water, light and flow together.', 'health', 'tool-health.svg', '' ),
 			array( 'Calendar', 'Schedule water changes, dosing, feeding and tests, then tick them off as you go. Each job repeats on its own timetable.', 'calendar', 'tool-calendar.svg', '' ),
-			array( 'Coral Photos', 'Take coral pictures without the blue cast, so the true colours and fluorescence come through.', 'photos', 'tool-camera.svg', 'pro' ),
+			array( 'Coral Photos', 'Take coral pictures without the blue cast, so the true colours and fluorescence come through.', 'photos', 'tool-camera.svg', '' ),
 			array( 'Community', 'Show off your reef, ask other reefkeepers for advice and share the gear behind your setup.', '', 'kind-marine.svg', 'soon' ),
 		),
 		'fresh'  => array(
 			array( 'Flow Planner', 'Model your filter outlet, hardscape and airstones in 3D and see where water moves and where waste settles.', 'flow', 'tool-flow.svg', '' ),
 			array( 'Water Tests', 'Log pH, KH, GH, ammonia, nitrite and nitrate, follow the trends, and follow a step-by-step guide to cycling.', 'tests', 'tool-log.svg', '' ),
-			array( 'Plant Lighting', 'See how much light reaches the substrate and whether your tank suits low, medium or high-light plants.', 'light', 'tool-light.svg', 'pro' ),
+			array( 'Plant Lighting', 'See how much light reaches the substrate and whether your tank suits low, medium or high-light plants.', 'light', 'tool-light.svg', '' ),
 			array( 'Tank Health', 'List fish, shrimp, snails and plants. It flags tankmates that clash and shoals that are too small.', 'health', 'tool-health.svg', '' ),
 			array( 'Calendar', 'Schedule water changes, ferts, feeding and tests, then tick them off as you go. Each job repeats on its own timetable.', 'calendar', 'tool-calendar.svg', '' ),
 			array( 'Community', 'Share your aquascape, trade planting and stocking ideas and ask other keepers for help.', '', 'kind-fresh.svg', 'soon' ),
@@ -155,7 +155,7 @@ function tank_tools_kind_tools( $kind ) {
 		'cold'   => array(
 			array( 'Flow Planner', 'Goldfish are messy. Model your filter and airstone in 3D and make sure water reaches every corner.', 'flow', 'tool-flow.svg', '' ),
 			array( 'Water Tests', 'Log your results and temperature, watch the trends and follow a guide to cycling a new tank.', 'tests', 'tool-log.svg', '' ),
-			array( 'Plant Lighting', 'Planning coldwater plants? Check how much light reaches the bottom, from elodea to moss balls.', 'light', 'tool-light.svg', 'pro' ),
+			array( 'Plant Lighting', 'Planning coldwater plants? Check how much light reaches the bottom, from elodea to moss balls.', 'light', 'tool-light.svg', '' ),
 			array( 'Tank Health', 'List your fish, snails and plants. It checks tank size, temperature and which tankmates could end up as a snack.', 'health', 'tool-health.svg', '' ),
 			array( 'Calendar', 'Schedule water changes, feeding and tests, then tick them off as you go. Each job repeats on its own timetable.', 'calendar', 'tool-calendar.svg', '' ),
 			array( 'Community', 'Share your goldfish and pond-style tanks, ask questions and swap tips with other keepers.', '', 'kind-cold.svg', 'soon' ),
