@@ -23,7 +23,7 @@ function tank_tools_img( $name ) {
  * @param string $alt   Picture description.
  * @param string $go    Link text.
  */
-function tank_tools_kind_card( $kind, $title, $text, $href, $img, $alt, $go = 'Take a look' ) {
+function tank_tools_kind_card( $kind, $title, $text, $href, $img, $alt, $go = 'Open the simulator' ) {
 	$src = tank_tools_img( $img );
 	return '<!-- wp:group {"className":"tt-card tt-k-' . $kind . '","layout":{"type":"default"}} -->
 <div class="wp-block-group tt-card tt-k-' . $kind . '">
@@ -171,13 +171,12 @@ function tank_tools_kind_tools( $kind ) {
 
 /** Full page body for the landing page. */
 function tank_tools_landing_content() {
-	return tank_tools_heading( 'What do you keep?', 'Choose a starting point. You can set up every kind of tank and swap between them whenever you like.' )
+	return tank_tools_heading( 'What do you keep?', 'Pick one to open the flow simulator with a starting setup for that kind of tank. Your saved tanks are there too.' )
 		. "\n" . tank_tools_grid( array(
-			tank_tools_kind_card( 'marine', 'Marine', 'Reef and fish-only tanks: corals, fish and inverts.', home_url( '/marine/' ), 'kind-marine.svg', 'Fish swimming over a coral reef' ),
-			tank_tools_kind_card( 'fresh', 'Freshwater', 'Tropical community, planted and shrimp tanks.', home_url( '/freshwater/' ), 'kind-fresh.svg', 'A small tropical fish among plants' ),
-			tank_tools_kind_card( 'cold', 'Coldwater', 'Goldfish, minnows and other unheated setups.', home_url( '/coldwater/' ), 'kind-cold.svg', 'A fancy goldfish' ),
-		), 3 )
-		. "\n" . '<!-- wp:pattern {"slug":"tank-tools/maker-note"} /-->';
+			tank_tools_kind_card( 'marine', 'Marine', 'Reef and fish-only tanks: corals, fish and inverts.', home_url( '/flow/?kind=marine' ), 'kind-marine.svg', 'Fish swimming over a coral reef' ),
+			tank_tools_kind_card( 'fresh', 'Freshwater', 'Tropical community, planted and shrimp tanks.', home_url( '/flow/?kind=fresh' ), 'kind-fresh.svg', 'A small tropical fish among plants' ),
+			tank_tools_kind_card( 'cold', 'Coldwater', 'Goldfish, minnows and other unheated setups.', home_url( '/flow/?kind=cold' ), 'kind-cold.svg', 'A fancy goldfish' ),
+		), 3 );
 }
 
 /** Full page body for one kind's home page. */

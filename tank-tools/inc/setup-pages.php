@@ -1,7 +1,6 @@
 <?php
 /**
- * Appearance → Tank Tools setup: creates the starter pages (Home, Marine, Freshwater, Coldwater)
- * filled with the theme's patterns. Nothing happens until you press the button, and pages that
+ * Appearance → Tank Tools setup: creates the Home page, filled with the theme's patterns. Nothing happens until you press the button, and pages that
  * already exist (same slug) are left alone.
  *
  * @package tank-tools
@@ -11,10 +10,7 @@ defined( 'ABSPATH' ) || exit;
 
 function tank_tools_starter_pages() {
 	return array(
-		'home'       => array( 'Tools for your tank', 'Track your water tests, plan your flow and lighting, and keep an eye on everything living in your tank. All free to use.', '', 'landing' ),
-		'marine'     => array( 'Reef tanks', 'Plan your flow, stay on top of your tests, find the right spot for every coral and keep watch over the whole reef.', '', 'marine' ),
-		'freshwater' => array( 'Freshwater tanks', 'Filter flow, water tests, light for your plants, and a check on whether your fish will get along.', 'page-kind-fresh', 'fresh' ),
-		'coldwater'  => array( 'Coldwater tanks', 'Keep goldfish and other coldwater fish healthy with tools for flow, testing, plants and stocking.', 'page-kind-cold', 'cold' ),
+		'home'       => array( 'Where does the water go?', 'Model your tank in 3D, place your pumps, outlets, airstones and rock, and see where the water flows and where it doesn\'t.', '', 'landing' ),
 	);
 }
 
@@ -30,13 +26,13 @@ function tank_tools_setup_screen() {
 		<?php if ( $done >= 0 ) : ?>
 			<div class="notice notice-success"><p><?php echo esc_html( sprintf( '%d page(s) created. Find them under Pages.', $done ) ); ?></p></div>
 		<?php endif; ?>
-		<p>This creates four starter pages built from the theme's patterns: <strong>Home</strong>, <strong>Marine</strong>, <strong>Freshwater</strong> and <strong>Coldwater</strong>. Pages that already exist with those addresses are skipped.</p>
+		<p>This creates the <strong>Home</strong> page: three cards (Marine, Freshwater, Coldwater) that open the Flow Simulator. The simulator's own page (<code>/flow/</code>) is made by the Tank Flow Simulator plugin when you activate it. A page that already exists at the same address is skipped.</p>
 		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 			<?php wp_nonce_field( 'tank_tools_setup' ); ?>
 			<input type="hidden" name="action" value="tank_tools_setup">
-			<p><label><input type="checkbox" name="publish" value="1"> Publish them and make <em>Home</em> the site's front page</label><br>
-			<span class="description">Leave unticked to create them as drafts you can review first.</span></p>
-			<?php submit_button( 'Create starter pages' ); ?>
+			<p><label><input type="checkbox" name="publish" value="1"> Publish it and make it the site's front page</label><br>
+			<span class="description">Leave unticked to create it as a draft you can review first.</span></p>
+			<?php submit_button( 'Create the home page' ); ?>
 		</form>
 	</div>
 	<?php

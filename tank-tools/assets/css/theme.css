@@ -40,8 +40,8 @@ body{ -webkit-text-size-adjust:100%; -webkit-tap-highlight-color:transparent; }
 .tt-hero .wp-block-post-excerpt:empty{ display:none; }
 
 /* ---------- sections ---------- */
-h2.tt-section{ margin:34px 0 12px !important; }
-.tt-intro{ margin:-4px 0 14px !important; color:var(--wp--preset--color--muted); }
+h2.tt-section{ margin-top:34px !important; margin-bottom:12px !important; }
+.tt-intro{ margin-top:-4px !important; margin-bottom:14px !important; color:var(--wp--preset--color--muted); }
 .tt-muted{ color:var(--wp--preset--color--muted); }
 
 /* ---------- cards ---------- */
@@ -99,7 +99,7 @@ h2.tt-section{ margin:34px 0 12px !important; }
 
 /* ---------- note from the maker ---------- */
 .tt-note{
-  margin:34px 0 8px !important; padding:18px 20px; background:var(--wp--preset--color--panel);
+  margin-top:34px !important; margin-bottom:8px !important; padding:18px 20px; background:var(--wp--preset--color--panel);
   border:1px solid var(--wp--preset--color--line); border-left:4px solid var(--wp--preset--color--accent); border-radius:6px;
 }
 .tt-note h2{ margin:0 0 8px !important; font-size:21px; }
